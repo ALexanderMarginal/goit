@@ -1,0 +1,25 @@
+@import '../variables';
+
+.persons {
+	padding: 94px 0;
+
+	&__image {
+		margin-bottom: 30px;
+	}
+
+	&__name {
+		font-weight: $fw-medium;
+		font-size: 16px;
+		text-align: center;
+		letter-spacing: .03em;
+		color: $color-black;
+		margin-bottom: 10px;
+	}
+
+	&__position {
+		text-align: center;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: .03em;
+	}
+}

@@ -1,0 +1,15 @@
+header.container
+	.header.row.align-items-center
+		.col-auto
+			a.header__logo(href='#')
+				| Web
+				span.header__logo--2 Studio
+		nav.col-auto.header__nav
+			ul.row.align-items-center
+				each navItem in ['Студия','Портфолио','Контакты']
+					li.header__nav-item
+						a(href='#')= navItem
+		.col-auto.ml-auto
+			a(href="mailto:info@devstudio.com") info@devstudio.com
+		.col-auto.header__phone
+			a(href="tel:+380961111111") +38 096 111 11 11

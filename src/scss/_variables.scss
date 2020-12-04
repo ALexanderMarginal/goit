@@ -2,8 +2,10 @@
 
 // COLORS
 
-$color-black: #000;
-$color-white: #fff;
+$color-black: #212121;
+$color-white: #FFF;
+$color-accent: #2196F3;
+$color-default: #757575;
 
 // FONTS
 
@@ -13,3 +15,12 @@ $easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.co
 $easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
 $easing-out: ease-out;
 $easing-in: ease-in;
+
+$font-logo: 'Raleway', sans-serif;
+$font-logo-2: 'Oleo Script', cursive;
+$font-default: 'Roboto', sans-serif;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 700;

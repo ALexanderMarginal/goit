@@ -1,0 +1,19 @@
+@import '../variables';
+
+.dignity {
+	padding: 94px 0;
+
+	&__item-title {
+		font-weight: $fw-bold;
+		line-height: 16px;
+		letter-spacing: .03em;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__item-text {
+		letter-spacing: .03em;
+		line-height: 24px;
+		padding-right: 10px;
+	}
+}

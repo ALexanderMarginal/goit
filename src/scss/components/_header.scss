@@ -1,0 +1,35 @@
+@import '../variables';
+
+.header {
+	height: 80px;
+
+	&__logo {
+		font-size: 26px;
+		line-height: 31px;
+		font-family: $font-logo;
+		color: $color-accent;
+		font-weight: $fw-bold;
+
+		&--2 {
+			font-family: $font-logo-2;
+			color: $color-black;
+			font-weight: $fw-regular;
+		}
+	}
+
+	&__nav {
+		margin-left: 80px;
+	}
+
+	&__phone {
+		margin-left: 50px;
+	}
+
+	&__nav-item {
+		padding: 0 25px;
+
+		a:not(:hover) {
+			color: $color-black;
+		}
+	}
+}

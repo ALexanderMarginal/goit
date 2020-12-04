@@ -1,0 +1,30 @@
+-
+	const persons = [
+		{
+			name: 'Игорь Демьяненко',
+			position: 'Product Designer',
+		},
+		{
+			name: 'Ольга Репина',
+			position: 'Frontend Developer',
+		},
+		{
+			name: 'Николай Тарасов',
+			position: 'Marketing',
+		},
+		{
+			name: 'Михаил Ермаков',
+			position: 'UI Designer',
+		},
+	]
+
+.persons
+	.container
+		h2 Наша команда
+		ul.row
+			each person in persons
+				li.col-3
+					.card
+						img.persons__image(src="images/img.jpg")
+						.persons__name= person.name
+						.persons__position= person.position

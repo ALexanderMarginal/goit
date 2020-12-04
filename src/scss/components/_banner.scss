@@ -1,0 +1,38 @@
+@import '../variables';
+
+.banner {
+	height: 600px;
+	background: #2F303A;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__title {
+		font-weight: $fw-black;
+		font-size: 44px;
+		line-height: 60px;
+		letter-spacing: .06em;
+		text-transform: uppercase;
+		max-width: 700px;
+		text-align: center;
+		color: $color-white;
+		margin: 0 0 30px;
+	}
+
+	&__button {
+		padding: 10px 32px;
+		background: $color-accent;
+		color: $color-white;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+		border-radius: 4px;
+		font-size: 16px;
+		line-height: 30px;
+		letter-spacing: .06em;
+		transition: all ease .15s;
+
+		&:hover {
+			background: rgba($color-accent, .75);
+		}
+	}
+}

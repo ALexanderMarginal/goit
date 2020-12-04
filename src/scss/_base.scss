@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *::before,
 *::after {
@@ -13,11 +15,63 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-decoration-skip: objects;
 	text-rendering: optimizeLegibility;
-	text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
+	font-family: $font-default;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: .03em;
+	color: $color-default;
+	font-weight: $fw-regular;
 }
 
 button:not([disabled]),
-a[role="button"]:not([disabled]) {
+a[role='button']:not([disabled]) {
 	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: $color-default;
+	transition: all ease .15s;
+	font-weight: $fw-medium;
+	line-height: 16px;
+	letter-spacing: .02em;
+
+	&:hover {
+		color: $color-accent;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+h2 {
+	text-align: center;
+	font-weight: $fw-bold;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: .03em;
+	color: $color-black;
+	margin-bottom: 50px;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.card {
+	background: #FFFFFF;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 1px rgba(0, 0, 0, .14), 0 2px 1px rgba(0, 0, 0, .2);
+	border-radius: 0 0 4px 4px;
+	padding-bottom: 30px;
 }
